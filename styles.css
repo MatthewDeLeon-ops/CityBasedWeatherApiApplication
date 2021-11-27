@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@100;200;300;700&display=swap');
-
 * {
+	/* box-sizing: content-box; */
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -12,16 +11,65 @@ body {
 	background-size: cover;
 	overflow: hidden;
 	height: 100vh;
-	font-family: 'Cormorant Garamond', sans-serif;
-	
+	font-family: 'Calibri', sans-serif;
 }
 
 .container {
-	/* padding: 20px 70px; needs to be fixed */
+	padding: 20px 70px;
 	color: red;
 }
-.current-info{
+
+.current-info {
 	display: flex;
 	justify-content: space-between;
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap;
+}
+
+.date-container {
+	font-weight: 100;
+}
+
+.date-container .time {
+	font-size: 60px;
+	/* font-weight: 300; */
+}
+
+.date-container #am-pm {
+	font-size: 40px;
+	/* font-weight: 300; */
+	margin-left: 20px;
+}
+
+.date-container .date {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.place-container {
+	text-align: end;
+}
+
+.place-container .time-zone {
+	font-size: 30px;
+	font-weight: 100;
+}
+
+.place-container .country {
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.current-info .others {
+	display: flex;
+	flex-direction: column;
+	background: rgba(24, 24, 27, 0.6);
+	padding: 20px;
+	border-radius: 10px;
+	margin: 10px 1;
+	border: 1px solid #eee;
+}
+
+.current-info .others .weather-item {
+	display: flex;
+	justify-content: space-between;
 }
