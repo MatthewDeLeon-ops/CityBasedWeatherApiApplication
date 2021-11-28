@@ -16,7 +16,7 @@ body {
 
 .container {
 	padding: 20px;
-	color: orange;
+	color: green;
 }
 
 .current-info {
@@ -25,15 +25,42 @@ body {
 	flex-wrap: wrap;
 }
 
-.date-container {
-	font-weight: 100;
+.date-container .time {
+	font-size: 70px;
+	text-align: center;
+	font-weight: 300;
 }
 
+.date-container #am-pm {
+	font-size: 40px;
+	font-weight: 300;
+	margin-left: 2px;
+}
 
 .date-container .date {
 	font-size: 33px;
 	text-align: center;
 	font-weight: 400;
+}
+
+.place-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.place-container .time-zone {
+	font-size: 30px;
+	font-weight: 100;
+}
+
+.place-container .country {
+	font-size: 20px;
+	text-align: center;
+	font-weight: 800px;
+}
+
+.date-container {
+	font-weight: 100;
 }
 
 .current-info .others {
@@ -44,6 +71,7 @@ body {
 	margin: 10px 0;
 	border: 3px solid #eee;
 }
+
 .current-info .others .weather-item {
 	font-size: 20px;
 	display: flex;
