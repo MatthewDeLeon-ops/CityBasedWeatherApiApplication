@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,50 +8,49 @@
 		<link rel="stylesheet" href="websitestyles.css">
 		<title>Weather App</title>
 	</head>
+
 	<body>
 
 		<div class="container">
 			<div class="current-info">
 				<div class="date-container">
-					<div class="time" id="time">
-						12:30 <span id="am-pm">PM</span>
-					</div>
 					<div class="date" id="date">
-						Monday, 25 May
+						<p><span id="datetime"></span></p>
+
+						<script>
+					var dt = new Date();
+					document.getElementById("datetime").innerHTML = dt.toLocaleString();
+					</script>
 					</div>
 					<div class="others" id="current-weather-items">
+						<div class="weather-item">
+							<div>Humidity</div>
+							<div>10%</div>
+						</div>
+						<div class="weather-item">
+							<div>Wind Speed</div>
+							<div>7 mph</div>
+						</div>
+						<div class="weather-item">
+							<div>Pressure</div>
+							<div>30.01 inHg</div>
+						</div>
 					</div>
-					<div class="weather-item">
-						<div>Humidity</div>
-						<div>10%</div>
-					</div>
-					<div class="weather-item">
-						<div>Wind Speed</div>
-						<div>7 mph</div>
-					</div>
-					<div class="weather-item">
-						<div>Pressure</div>
-						<div>30.01 inHg</div>
-					</div>
-				</div>
-				<div class="place-container">
-					<div class="time-zone" id="time-zone">New Mexico</div>
-					<div id="country" class="country">USA</div>
+
 				</div>
 			</div>
 		</div>
 		<div class="future-forecast">
-			<div class="today" id="current-temp">
-				<img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon"
-					class="w-icon">
-				<div class="other">
-					<div class="day">Monday</div>
-					<div class="temp">Night - 75&#176; F</div>
-					<div class="temp">Day - 85&#176; F</div>
-				</div>
-			</div>
-
 			<div class="weather-forecast" id="weather-forecast">
+				<div class="today" id="current-temp">
+					<img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon"
+						class="w-icon">
+					<div class="other">
+						<div class="day">Monday</div>
+						<div class="temp">Night - 75&#176; F</div>
+						<div class="temp">Day - 85&#176; F</div>
+					</div>
+				</div>
 				<div class="weather-forecast-item">
 					<div class="day">Tuesday</div>
 					<img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon"
