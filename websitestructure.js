@@ -27,20 +27,14 @@ setInterval(() => {
 }, 1000);
 
 getWeatherData()
-
-function getWeatherData() {
-	navigator.geolocation.getCurrentPosition((success) => {
-		let {
-			latitude,
-			longitude
-		} = success.coords
-		fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&units=imperial&appid=${API}`).then(res => res.json()).then(data => {
-			showWeatherData(data)
-		})
-
-	})
+function getWeatherData () {
+    navigator.geolocation.getCurrentPosition((success) => {
+        let {latitude, longitude } = success.coords;
+        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=${API}`).then(res => res.json()).then(data => {
+        showWeatherData(data);
+        })
+    })
 }
-
 function showWeatherData(data) {
 	let {
 		humidity,
@@ -49,7 +43,8 @@ function showWeatherData(data) {
 		sunset,
 		wind_speed,
 	} = data.current
-
+	timezone.innerHTML = data.timezone
+	countryEl.innerHTML - data.latitude + 'N' + data.longitude +'E'
 	currentWeatherItemsEl.innerHTML =
 		`<div class="weather-item">
  		<div>Relative Humidity</div>
