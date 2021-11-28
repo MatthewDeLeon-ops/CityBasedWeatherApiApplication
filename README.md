@@ -5,5 +5,5 @@ Built in 10 hours a Weather Web App run locally.
 # - Custom background 
 # - daily temps for day/night
 # - current weather metrics on top
-# - accuracy 80-90% using open weather api
+# - accuracy 95% using open weather api, the relative humidity is 65% accurate as its relative humidity
 # - mobile friendly in portrait mode
