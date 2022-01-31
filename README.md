@@ -7,6 +7,6 @@ Current Weather Metrics [TEMP,Humidity(+/-2%),pressure,sunrise&sunset are accura
 # Daily tempuratures are not nearly accurate due to the free api plan in use not supporting daily forecast. My compromise was using the 3 hour Forecast for 5 days.
 # - mobile friendly in portrait mode
 
-# url https://main.d3vfl9np1ln79x.amplifyapp.com/
+url https://main.d3vfl9np1ln79x.amplifyapp.com/
 
 #
