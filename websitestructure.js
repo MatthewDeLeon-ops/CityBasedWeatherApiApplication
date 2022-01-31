@@ -88,7 +88,7 @@ function showWeatherData(data) {
 </div>
 <div class="weather-item">
 	<div>Pressure</div>
-	<div>${(pressure*0.02953).toFixed(2)} Hpa</div>
+	<div>${(pressure*0.02953).toFixed(2)} inHg</div>
 </div>
 	<div class="weather-item">
 	<div>sunrise</div>
