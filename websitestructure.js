@@ -29,7 +29,7 @@ const months = [
   "Nov",
   "Dec",
 ];
-const API = "placeapikeyhere";
+const API = "a9cda4bc0a0479d199f6241c56c1238d"; //old api key
 
 setInterval(() => {
   const time = new Date();
